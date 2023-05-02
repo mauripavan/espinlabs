@@ -1,5 +1,6 @@
 import React from "react";
 import Table from "./components/Table";
+import "./index.css";
 
 function App() {
   const data = [
@@ -18,15 +19,7 @@ function App() {
   ];
 
   return (
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        flex: 1,
-        minHeight: '100vh'
-      }}
-    >
+    <div className="container">
       <Table data={data} />
     </div>
   );
